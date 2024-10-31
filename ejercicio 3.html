@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <script>
+        // Solicitar el monto total de la compra al usuario
+const montoTotal = parseFloat(prompt("Introduce el monto total de tu compra:"));
+
+// Calcular el monto final con descuento si corresponde
+let montoFinal;
+if (montoTotal > 100) {
+    montoFinal = montoTotal * 0.9; // Aplica un descuento del 10%
+} else {
+    montoFinal = montoTotal; // No aplica descuento
+}
+
+// Mostrar el monto final a pagar
+alert("El monto final a pagar es: $" + montoFinal.toFixed(2));
+
+    </script>
+</body>
+</html>

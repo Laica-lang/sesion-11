@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+        const calificacion = parseFloat(prompt("Introduce una calificación numérica entre 0 y 100:"));
+// Verificar la calificación y mostrar el mensaje correspondiente
+if(calificacion >=0 && calificacion<=100){
+    if (calificacion >= 90) {
+    alert("Aprobado con honores");
+} else if (calificacion >= 70) {
+    alert("Aprobado");
+} else {
+    alert("Reprobado");
+}
+
+}else{
+    alert("por favor ingrese una calificacion valida entre 0 a 100")
+}
+
+    </script>
+</body>
+</html>
