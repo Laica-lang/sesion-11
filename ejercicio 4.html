@@ -7,18 +7,22 @@
 </head>
 <body>
     <script>
-        // Generar un número aleatorio entre 1 y 10
+       
 const numeroAleatorio = Math.floor(Math.random() * 10) + 1;
 
-// Solicitar al usuario que adivine el número
+
 const adivinanza = parseInt(prompt("Adivina un número entre 1 y 10:"));
 
-// Verificar si el usuario adivinó correctamente
-if (adivinanza === numeroAleatorio) {
+if(adivinanza >=1 && adivinanza<=10){
+    if (adivinanza === numeroAleatorio) {
     alert("¡Felicidades, adivinaste el número!");
 } else {
     alert("Lo siento, el número era " + numeroAleatorio);
 }
+}else{
+    alert("por favor ingrese una calificacion valida entre 1 a 10")
+}
+
 
     </script>
 </body>

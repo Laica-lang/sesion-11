@@ -7,18 +7,18 @@
 </head>
 <body>
     <script>
-        // Solicitar el monto total de la compra al usuario
+        
 const montoTotal = parseFloat(prompt("Introduce el monto total de tu compra:"));
 
-// Calcular el monto final con descuento si corresponde
+
 let montoFinal;
 if (montoTotal > 100) {
-    montoFinal = montoTotal * 0.9; // Aplica un descuento del 10%
+    montoFinal = montoTotal * 0.9;
 } else {
-    montoFinal = montoTotal; // No aplica descuento
+    montoFinal = montoTotal; 
 }
 
-// Mostrar el monto final a pagar
+
 alert("El monto final a pagar es: $" + montoFinal.toFixed(2));
 
     </script>
